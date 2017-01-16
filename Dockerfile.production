@@ -1,0 +1,25 @@
+# This is our PRODUCTION dockerfile.
+FROM ruby:2.3
+
+RUN apt-get update \
+    && apt-get install nodejs -y \
+    && apt-get install -y libqt4-webkit libqt4-dev xvfb \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN gem install bundler
+
+EXPOSE 3000
+ENV RAILS_ENV production
+ENV NODE_ENV production
+# TODO: Move key to secrets storage (To be decided)
+ENV SECRET_KEY_BASE c2291c2d63b4acb27bb6b08d9b7f36de68b519a3d55de7fed564b890021356fc8d703c1e494efd0ce0525e607e52a182064ed5ffc266114a992eb0b45bf9cc77
+
+WORKDIR /share
+ADD Gemfile /share/Gemfile
+ADD Gemfile.lock /share/Gemfile.lock
+RUN bundle install --without development
+
+
+ADD ./ /share
+
+CMD rails s Puma -b 0.0.0.0 -e production -p 3000
