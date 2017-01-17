@@ -1,8 +1,7 @@
 # frozen_string_literal: true
 class ApplicationController < ActionController::Base
   def can_administer?
-    # current_user.try(:admin?)
-    true
+     current_user.try(:admin?)
   end
 
   # Prevent CSRF attacks by raising an exception.
