@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/kaiomagalhaes/rapidfire
+  revision: 45ee0bebfadb30c91cce7158d814c1648c933e96
+  branch: feature/users-in-attempt-nil
+  specs:
+    rapidfire (3.0.0)
+      active_model_serializers (~> 0.8.1)
+      rails (>= 3.2.13)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -24,6 +33,8 @@ GEM
       erubis (~> 2.7.0)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
+    active_model_serializers (0.8.3)
+      activemodel (>= 3.0)
     activejob (5.0.1)
       activesupport (= 5.0.1)
       globalid (>= 0.3.6)
@@ -53,7 +64,7 @@ GEM
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
     brakeman (3.4.1)
-    builder (3.2.2)
+    builder (3.2.3)
     bullet (5.5.0)
       activesupport (>= 3.0.0)
       uniform_notifier (~> 1.10.0)
@@ -288,6 +299,7 @@ DEPENDENCIES
   rack-cors
   rails (~> 5.0.1)
   rails-controller-testing
+  rapidfire!
   rspec-rails
   rubocop
   rubocop-rspec
