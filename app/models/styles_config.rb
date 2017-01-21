@@ -1,0 +1,2 @@
+class StylesConfig < ApplicationRecord
+end

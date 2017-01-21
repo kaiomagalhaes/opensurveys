@@ -1,0 +1,22 @@
+<%= form_for(styles_config) do |f| %>
+  <% if styles_config.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(styles_config.errors.count, "error") %> prohibited this styles_config from being saved:</h2>
+
+      <ul>
+      <% styles_config.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :background_image_url %>
+    <%= f.text_field :background_image_url %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

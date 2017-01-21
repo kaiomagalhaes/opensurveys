@@ -1,0 +1,1 @@
+json.array! @styles_configs, partial: 'styles_configs/styles_config', as: :styles_config
