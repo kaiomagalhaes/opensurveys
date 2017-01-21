@@ -1,7 +1,7 @@
 GIT
   remote: git://github.com/kaiomagalhaes/rapidfire
-  revision: 45ee0bebfadb30c91cce7158d814c1648c933e96
-  branch: feature/users-in-attempt-nil
+  revision: a6f343cec3f9ecd1fa62c94879318c1df72b26bf
+  branch: kaiomagalhaes/opensurveys
   specs:
     rapidfire (3.0.0)
       active_model_serializers (~> 0.8.1)
