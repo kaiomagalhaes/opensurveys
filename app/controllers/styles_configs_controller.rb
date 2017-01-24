@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class StylesConfigsController < ApplicationController
   before_action :set_styles_config, only: [:show, :edit, :update, :destroy]
 
@@ -9,8 +10,7 @@ class StylesConfigsController < ApplicationController
 
   # GET /styles_configs/1
   # GET /styles_configs/1.json
-  def show
-  end
+  def show; end
 
   # GET /styles_configs/new
   def new
@@ -18,8 +18,7 @@ class StylesConfigsController < ApplicationController
   end
 
   # GET /styles_configs/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /styles_configs
   # POST /styles_configs.json
@@ -62,13 +61,14 @@ class StylesConfigsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_styles_config
-      @styles_config = StylesConfig.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def styles_config_params
-      params.require(:styles_config).permit(:background_image_url)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_styles_config
+    @styles_config = StylesConfig.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def styles_config_params
+    params.require(:styles_config).permit(:background_image_url)
+  end
 end

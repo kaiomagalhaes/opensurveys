@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :styles_configs
   get 'pages/index'
 
-  root to: "pages#index"
+  root to: 'pages#index'
   devise_for :users, controllers: { sessions: 'users/sessions' }
   mount Rapidfire::Engine => '/rapidfire'
 
