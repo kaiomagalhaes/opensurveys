@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 module ApplicationHelper
-  def set_title(survey_title = '')
-    default_title = "Open Surveys"
+  def title(survey_title = '')
+    default_title = 'Open Surveys'
     if survey_title.empty?
       default_title
     else
