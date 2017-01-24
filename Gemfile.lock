@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/kaiomagalhaes/rapidfire
-  revision: 3dd54d5176015713b0c33bc4915b77eb1cedcbb3
+  revision: 2ef9ac3d033ba428afd57409f20fc17467daeca6
   branch: kaiomagalhaes/opensurveys
   specs:
     rapidfire (3.0.0)
