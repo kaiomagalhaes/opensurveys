@@ -53,11 +53,16 @@ GEM
       public_suffix (~> 2.0, >= 2.0.2)
     arel (7.1.4)
     ast (2.3.0)
+    autoprefixer-rails (6.6.1)
+      execjs
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)
       thread_safe (~> 0.3, >= 0.3.1)
     bcrypt (3.1.11)
+    bootstrap-sass (3.3.7)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
     brakeman (3.4.1)
     builder (3.2.3)
     bullet (5.5.0)
@@ -278,6 +283,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass (~> 3.3.6)
   brakeman
   bullet
   bundler-audit
@@ -308,7 +314,7 @@ DEPENDENCIES
   web-console
 
 RUBY VERSION
-   ruby 2.3.3p222
+   ruby 2.3.0p0
 
 BUNDLED WITH
    1.13.7
